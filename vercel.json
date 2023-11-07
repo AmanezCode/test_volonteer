@@ -1,18 +1,25 @@
 {
     "builds": [
-      {
-        "src": "project/wsgi.py",
-        "use": "@vercel/python"
-      }
+        {
+            "src": "project/wsgi.py",
+            "use": "@vercel/python"
+        }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "project/wsgi.py"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "project/wsgi.py"
+        },
+        {
+          "src": "/static/(.*)",
+          "dest": "static/$1"
+        },
+        {
+          "handle": "filesystem"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "your-django-app-serverless-function"
+        }
     ]
 }
