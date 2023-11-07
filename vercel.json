@@ -9,6 +9,10 @@
       {
         "src": "/(.*)",
         "dest": "project/wsgi.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/"
       }
     ],
 }
