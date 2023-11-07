@@ -2,12 +2,6 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from . import v_controller
-from django.conf import settings
-from django.conf.urls.static import static
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
 
 urlpatterns = [
     path('', views.index_view),
