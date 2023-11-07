@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'credentials',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://volunteer.up.railway.app",
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
