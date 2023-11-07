@@ -30640,7 +30640,7 @@
 	                                _react2.default.createElement(
 	                                    'span',
 	                                    { className: 'logo-text logo-text-part1' },
-	                                    'Aman'
+	                                    'Volunteer'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'span',
