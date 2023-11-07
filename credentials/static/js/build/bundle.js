@@ -34846,7 +34846,7 @@
 	                            _react2.default.createElement(
 	                                'a',
 	                                { className: 'text-highlight', href: 'javascript:void(0)' },
-	                                'AmanSite'
+	                                'VolunteerSite'
 	                            ),
 	                            ' | All Rights Reserved'
 	                        ),
