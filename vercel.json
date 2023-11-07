@@ -1,10 +1,4 @@
 {
-    "rewrites": [
-        { 
-            "source": "/(.*)", 
-            "destination": "/" 
-        }
-    ],
     "builds": [
       {
         "src": "project/wsgi.py",
@@ -16,5 +10,11 @@
         "src": "/(.*)",
         "dest": "project/wsgi.py"
       }
-    ]
+    ],
+    "rewrites": [
+        { 
+            "source": "/(.*)", 
+            "destination": "/" 
+        }
+    ],
 }
