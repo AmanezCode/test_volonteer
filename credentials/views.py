@@ -37,7 +37,7 @@ def signup(request):
     return render(request, "registrationapp/signup.html")
 
 def index_view(request):
-    return render(request, 'index.php')
+    return render(request, 'index.html')
 
 def login_view(request):
     if request.method == 'POST':
